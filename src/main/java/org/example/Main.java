@@ -6,6 +6,14 @@ import java.util.Scanner;
 
 
 public class Main {
+
+    /**
+     * Метод печати таблицы сравнения времени работы методов классов ArrayList и LinkedList
+     * @param result_add Параметр времени работы методов добавления элемента в коллекциях
+     * @param result_get Параметр времени работы методов получения элемента в коллекциях
+     * @param result_delete Параметр времени работы методов удаления элемента в коллекциях
+     * @param k Параметр количества элементов в коллекциях
+     */
     public static void table (String result_add, String result_get, String result_delete, int k) {
         System.out.printf ("%-10s%-10s%-10s%n", "Method" + "\t", "ArrayList" + "\t\t\t\t\t", "LinkedList");
 

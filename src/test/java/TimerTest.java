@@ -14,27 +14,25 @@ public class TimerTest {
     @Test
     public void add(){
         int k = 10000;
-        Timer result_add = new Timer();
-        result_add.addElems(k);
-        assertTrue(result_add.getTime_array() > 0 && result_add.getTime_array() > 0);
+
+        testTimer.addElems(k);
+        assertTrue(testTimer.getTime_array() > 0 && testTimer.getTime_link() > 0);
     }
 
     @Test
     public void get(){
         int k = 10000;
-        Timer result_add = new Timer();
-        result_add.addElems(k);
-        result_add.getElems(k);
-        assertTrue(result_add.getTime_array() > 0 && result_add.getTime_array() > 0);
+        testTimer.addElems(k);
+        testTimer.getElems(k);
+        assertTrue(testTimer.getTime_array() > 0 && testTimer.getTime_link() > 0);
     }
 
     @Test
     public void delete(){
         int k = 10000;
-        Timer result_add = new Timer();
-        result_add.addElems(k);
-        result_add.deleteElems(k);
-        assertTrue(result_add.getTime_array() > 0 && result_add.getTime_array() > 0);
+        testTimer.addElems(k);
+        testTimer.deleteElems(k);
+        assertTrue(testTimer.getTime_array() > 0 && testTimer.getTime_link() > 0);
     }
 
 
